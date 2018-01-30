@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		
+		<title>Float</title>
+		<style type="text/css">
+			*, *:after, *:before{
+				box-sizing:border-box;
+			}
+			[class*='col-']{
+				float:left;
+				min-height: 200px;
+				padding-right:20px;
+			}
+			[class*='col-']:last-of-type{
+                padding-right:0;
+			}
+			.grid-pad[class*='col-']{
+                padding:0 15px;
+			}
+			.grid{
+				margin:15px 0;
+			}
+
+			/*CSS float fixed*/
+			.grid:after, .grid:before{
+				content:'';
+				clear:both;
+				display:table;
+			}
+			.col-8{
+				width:calc(100% / 12);
+			}
+			.col-20{
+				width:20%;
+			}
+			.col-25{
+				width:25%;
+			}
+			.col-30{
+				width:30%;
+			}
+			.col-33{
+				width:calc(100% / 3);
+			}
+			.col-45{
+				width:45%;
+			}
+			.col-50{
+				width:50%;
+			}
+			.col-80{
+				width:80%;
+			}
+			.box{
+				background: #EEE;
+				width:100%;
+				height: 200px;
+			}
+			@media (max-width: 475px){
+				[class*='col-']{
+					width:100%;
+					padding:0;
+					margin-bottom: 15px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="grid">
+
+				<div class="col-20">
+					<!-- CONTENTS -->
+					<div class="box">A</div>
+				</div>
+
+				<div class="col-80">
+					<!-- CONTENTS -->
+					<div class="box">B</div>
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="col-33">
+					<!-- CONTENTS -->
+					<div class="box">A</div>
+				</div>
+				<div class="col-33">
+					<!-- CONTENTS -->
+					<div class="box">B</div>
+				</div>
+				<div class="col-33">
+					<!-- CONTENTS -->
+					<div class="box">C</div>
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">1</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">2</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">3</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">4</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">5</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">6</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">7</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">8</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">9</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">10</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">11</div>
+				</div>
+				<div class="col-8">
+					<!-- CONTENTS -->
+					<div class="box">12</div>
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="col-25">
+					<div class="box">i</div>
+				</div>
+				<div class="col-30">
+					<div class="box">ii</div>
+				</div>
+				<div class="col-45">
+					<div class="box">iii</div>
+				</div>
+			</div>
+
+			<div class="grid grid-pad">
+				<div class="col-50">
+					<div class="box">a</div>
+				</div>
+				<div class="col-50">
+					<div class="box">b</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
